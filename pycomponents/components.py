@@ -1,6 +1,6 @@
 import os
 import sys
-sys.path.join(os.pardir)
+sys.path.append(os.pardir)
 
 class Componetns:
     def __init__(self) -> None:

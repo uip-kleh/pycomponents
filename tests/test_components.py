@@ -1,6 +1,6 @@
 import os
 import sys
-sys.path.join(os.pardir)
+sys.path.append(os.pardir)
 from pycomponents.components import Componetns
 
 if __name__ == "__main__":
