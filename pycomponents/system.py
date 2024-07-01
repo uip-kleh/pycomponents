@@ -7,15 +7,15 @@ class System:
     def __init__(self) -> None:
         pass
 
-    def join_home_dir(self, fname: str):
+    def join_home_dir(self, fname: str) -> str:
         fname = os.path.join(self.home_path, fname)
         self.make_dir(fname)
         return fname
 
-    def dir_exists(self, fname: str):
+    def dir_exists(self, fname: str) -> bool:
         if os.path.exists(fname): return True
         return False
     
-    def make_dir(self, fname: str):
+    def make_dir(self, fname: str) -> None:
         if not self.dir_exists(fname):
             os.mkdir(fname)
